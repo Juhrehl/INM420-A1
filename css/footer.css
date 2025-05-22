@@ -1,0 +1,139 @@
+/* Footer Styles */
+.footer {
+  color: white;
+  padding: var(--space-6) 0;
+}
+
+.footer h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  color: grey;
+  letter-spacing: 1px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  margin-bottom: var(--space-3);
+}
+
+.social-icons a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: var(--space-2);
+  color: var(--primary-light);
+  transition: background-color var(--transition-fast);
+}
+
+.social-icons a:hover {
+  background-color: var(--primary);
+}
+
+.email-link {
+  color: var(--primary-light);
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: var(--space-4);
+  transition: color var(--transition-fast);
+}
+
+.email-link:hover {
+  color: var(--primary-light);
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-3) 0;
+}
+
+.footer-links li {
+  margin-bottom: var(--space-1);
+}
+
+.footer-links a {
+  color: black;
+  font-size: 0.9rem;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+/* Footer Sections */
+.footer-top {
+  margin-bottom: var(--space-5);
+}
+
+.footer-bottom {
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Contact Form */
+.contact-form {
+  margin-top: var(--space-3);
+}
+
+.form-control {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+
+.form-control::placeholder {
+  color: black;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.message-input {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.send-btn {
+  width: 100%;
+  background-color: var(--primary);
+  border: none;
+  padding: var(--space-2) var(--space-3);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.send-btn:hover {
+  background-color: var(--primary-light);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer {
+    padding: var(--space-5) 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    text-align: center;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .footer-links {
+    text-align: center;
+  }
+}

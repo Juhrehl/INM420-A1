@@ -1,0 +1,115 @@
+/* Slogan Section */
+.slogan-section {
+  text-align: left;
+  padding: var(--space-6) 0;
+  background-color: white;
+}
+
+.slogan-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.slogan-description {
+  max-width: 800px;
+  margin: 0;
+  color: var(--gray-dark);
+  font-size: 1.1rem;
+}
+
+/* Features Section */
+.features-section {
+  padding: var(--space-6) 0;
+  background-color: var(--light);
+}
+
+.feature-card {
+  border-radius: var(--border-radius-md);
+  padding: var(--space-4);
+  height: 100%;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-3);
+}
+
+.icon-container i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.support {
+  background-color: var(--primary);
+}
+
+.sales {
+  background-color: var(--secondary);
+}
+
+.components {
+  background-color: var(--accent);
+}
+
+.swap {
+  background-color: var(--success);
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+.feature-card p {
+  color: var(--gray-dark);
+  margin-bottom: var(--space-3);
+  font-size: 0.95rem;
+}
+
+.learn-more {
+  color: var(--primary);
+  font-weight: 500;
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition-fast);
+}
+
+.learn-more:hover {
+  border-bottom: 2px solid var(--primary);
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .slogan-title {
+    font-size: 1.8rem;
+  }
+  
+  .slogan-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    margin-bottom: var(--space-3);
+  }
+  
+  .slogan-section, .features-section {
+    padding: var(--space-4) 0;
+  }
+}
